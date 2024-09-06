@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-# locale                   : "en-US"
+locale                   : "--"
 title                    : "Xia/Personal Homepage"
 title_separator          : "-"
 name                     : &name "Xia"
@@ -34,12 +34,13 @@ author:
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=PC-Y84gAAAAJ"
-  # impactstory      : # URL
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-2872-7151"
   github           : "xia-xx-cv"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
+  # Repositories and software development
+  github           : "xia-xx-cv"
+  kaggle           : # Username  
+  
   # Social media
   bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
