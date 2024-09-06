@@ -1,48 +1,49 @@
+---
+permalink: /
+title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
-2011 B.E.
+This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
-2014 M.E.
+A data-driven personal website
+======
+Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-2018 PhD.
+Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
-2019~Now, School of Computer Science and Artificial Intelligence, Jiangxi University and Finance and Economics
+Getting started
+======
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
+1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+1. Check status by going to the repository settings, in the "GitHub pages" section
 
-Research interests include semantic segmentation, medical image analysis, and visual smoke detection.
+Site-wide configuration
+------
+The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
 
-# Semantic Segmentation
-Xue Xia, Jiayu You and Yuming Fang. A graph-involved lightweight semantic segmentation network. Pattern Recognition and Computer Vision (PRCV) 2023. Lecture Notes in Computer Science, vol 14431. Springer, Singapore. doi: 10.1007/978-981-99-8540-1_30. [paper](https://link.springer.com/chapter/10.1007/978-981-99-8540-1_30), [repo](https://github.com/xia-xx-cv/Graph-Lightweight-SemSeg)
+Create content & metadata
+------
+For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
 
-# Medical Image Analysis
-Xue Xia et al.. Eye disease diagnosis and fundus synthesis: a large-scale dataset and benchmark. 2022 IEEE 24th International Workshop on Multimedia Signal Processing (MMSP), Shanghai, China, 2022, pp. 1-6, doi: 10.1109/MMSP55362.2022.9949547. [conf_paper](https://ieeexplore.ieee.org/document/9949547)
-and 
-Benchmarking deep models on retinal fundus disease diagnosis and a large-scale dataset. Signal Processing: Image Communication. 127: 117151, 2024. doi: 10.1016/j.image.2024.117151. [journal_paper](https://www.sciencedirect.com/science/article/pii/S0923596524000523)
-[repo_of_above_two](https://github.com/xia-xx-cv/EDDFS_dataset)
+**Markdown generator**
 
-Xue Xia, Kun Zhan, Yuming Fang, Wenhui Jiang, Fei Shen. LANet-DR: Lesion-aware network for diabetic retinopathy diagnosis. International Journal of Imaging Systems and Technology. 33(6):1914-1928, 2023. doi:10.1002/ima.22933. [paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/ima.22933), [arXiv](https://arxiv.org/abs/2408.07264), [repo](https://github.com/xia-xx-cv/LANet-DR)
+I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
+) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
 
-Chao Cai, Xue Xia and Yuming Fang. FundusGAN: a one-stage single input GAN for fundus synthesis. Pattern Recognition and Computer Vision (PRCV) 2022. Lecture Notes in Computer Science, vol 13535. Springer, Cham. doi: 10.1007/978-3-031-18910-4_3. [paper](https://link.springer.com/chapter/10.1007/978-3-031-18910-4_3), code modified from [this_repo](https://github.com/juntang-zhuang/LadderNet)
+How to edit your site's GitHub repository
+------
+Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
 
-# Visual Smoke Detection
-Xue Xia, Kun Zhan, Yajing Peng and Yuming Fang. Texture-aware network for smoke density estimation. 2022 IEEE International Conference on Visual Communications and Image Processing (VCIP), Suzhou, China, 2022, pp. 1-5, doi: 10.1109/VCIP56404.2022.10008826. [paper](https://ieeexplore.ieee.org/document/10008826), [repo](https://github.com/xia-xx-cv/TANet_smoke)
+Example: editing a markdown file for a talk
+![Editing a markdown file for a talk](/images/editing-talk.png)
 
-``` 
-@ARTICLE{8868104,
-  author={Yuan, Feiniu and Zhang, Lin and Xia, Xue and Huang, Qinghua and Li, Xuelong},
-  journal={IEEE Transactions on Image Processing}, 
-  title={A Wave-Shaped Deep Neural Network for Smoke Density Estimation}, 
-  year={2020},
-  volume={29},
-  number={},
-  pages={2301-2313},
-  doi={10.1109/TIP.2019.2946126}}
-```
-[paper](https://ieeexplore.ieee.org/document/8868104), [code](http://staff.ustc.edu.cn/~yfn/dss.html)
-
-Xia Xue, Yuan Feiniu, Zhang Lin, Yang Longzhen, Shi Jinting. From traditional methods to deep ones: review of visual smoke recognition, detection, and segmentation. Journal of Image and Graphics. 24(10):1627-1647, 2019. doi: 10.11834/jig.190230. (Survey, in Chinese) [paper](http://cjig.ijournals.cn/jig/ch/reader/view_abstract.aspx?file_no=20191002).
-
-Yuan Feiniu, Xia Xue, Li Gang, Zhang Lin, Shi Jinting. GaborNet for smoke recognition and texture classification. Journal of Image and Graphics. 24(2):269-281, 2019. doi: 10.11834/jig.180397. (in Chinese) [paper](http://cjig.ijournals.cn/jig/ch/reader/view_abstract.aspx?file_no=20190211), [code](https://mega.nz/folder/cl9BXJRb#YgAvsgx-PLCz16ZtcCJuXA)
-
-Yuan Feiniu, Xia Xue, Shi Jinting, Zhang Lin, Huang Jifeng. Learning multi-scale and multi-order features from 3D local differences for visual smoke recognition. Information Sciences. 468:193-212, 2018. doi: 10.1016/j.ins.2018.08.005. [paper](https://www.sciencedirect.com/science/article/pii/S0020025518306108), [code](https://mega.nz/folder/Yx1wxayZ#LFHRqpKH0jCM0vf5z3BWfQ)
-
-Feiniu Yuan, Xue Xia, and Jinting Shi. Holistic learning-based high-order feature descriptor for smoke recognition. International Journal of Wavelets, Multiresolution and Information Processing. 17(02): 1940005, 2019. doi: 10.1142/S0219691319400058. [paper](https://worldscientific.com/doi/10.1142/S0219691319400058),[code](https://mega.nz/folder/JlUG1aYb#Rm5KU8bYYuEi2_zsFH5Wdg)
-
+For more info
+------
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
