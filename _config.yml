@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Xia"
 description              : &description "personal description"
 url                      : https://xia-xx-cv.github.io
-baseurl                  : 
+baseurl                  : ""
 repository               : "xia-xx-cv/xia-xx-cv.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
