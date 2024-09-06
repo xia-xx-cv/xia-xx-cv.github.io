@@ -1,11 +1,4 @@
----
-permalink: /
-title: "About Me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+
 2011 B.E.
 2014 M.E.
 2018 PhD.
