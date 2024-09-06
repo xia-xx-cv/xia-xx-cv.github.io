@@ -13,14 +13,14 @@ Research interests include semantic segmentation, medical image analysis, and vi
 Xue Xia, Jiayu You and Yuming Fang. A graph-involved lightweight semantic segmentation network. Pattern Recognition and Computer Vision (PRCV) 2023. Lecture Notes in Computer Science, vol 14431. Springer, Singapore. doi: 10.1007/978-981-99-8540-1_30. [paper](https://link.springer.com/chapter/10.1007/978-981-99-8540-1_30), [repo](https://github.com/xia-xx-cv/Graph-Lightweight-SemSeg)
 
 # Medical Image Analysis
-Xue Xia et al.. Eye disease diagnosis and fundus synthesis: a large-scale dataset and benchmark. 2022 IEEE 24th International Workshop on Multimedia Signal Processing (MMSP), Shanghai, China, 2022, pp. 1-6, doi: 10.1109/MMSP55362.2022.9949547. [paper](https://ieeexplore.ieee.org/document/9949547)
+Xue Xia et al.. Eye disease diagnosis and fundus synthesis: a large-scale dataset and benchmark. 2022 IEEE 24th International Workshop on Multimedia Signal Processing (MMSP), Shanghai, China, 2022, pp. 1-6, doi: 10.1109/MMSP55362.2022.9949547. [conf_paper](https://ieeexplore.ieee.org/document/9949547)
 and 
-Benchmarking deep models on retinal fundus disease diagnosis and a large-scale dataset. Signal Processing: Image Communication. 127: 117151, 2024. doi: 10.1016/j.image.2024.117151. [paper](https://www.sciencedirect.com/science/article/pii/S0923596524000523)
-[repo](https://github.com/xia-xx-cv/EDDFS_dataset)
+Benchmarking deep models on retinal fundus disease diagnosis and a large-scale dataset. Signal Processing: Image Communication. 127: 117151, 2024. doi: 10.1016/j.image.2024.117151. [journal_paper](https://www.sciencedirect.com/science/article/pii/S0923596524000523)
+[repo_of_above_two](https://github.com/xia-xx-cv/EDDFS_dataset)
 
 Xue Xia, Kun Zhan, Yuming Fang, Wenhui Jiang, Fei Shen. LANet-DR: Lesion-aware network for diabetic retinopathy diagnosis. International Journal of Imaging Systems and Technology. 33(6):1914-1928, 2023. doi:10.1002/ima.22933. [paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/ima.22933), [arXiv](https://arxiv.org/abs/2408.07264), [repo](https://github.com/xia-xx-cv/LANet-DR)
 
-Chao Cai, Xue Xia and Yuming Fang. FundusGAN: a one-stage single input GAN for fundus synthesis. Pattern Recognition and Computer Vision (PRCV) 2022. Lecture Notes in Computer Science, vol 13535. Springer, Cham. doi: 10.1007/978-3-031-18910-4_3. [paper](https://link.springer.com/chapter/10.1007/978-3-031-18910-4_3), code modified from [this repo](https://github.com/juntang-zhuang/LadderNet)
+Chao Cai, Xue Xia and Yuming Fang. FundusGAN: a one-stage single input GAN for fundus synthesis. Pattern Recognition and Computer Vision (PRCV) 2022. Lecture Notes in Computer Science, vol 13535. Springer, Cham. doi: 10.1007/978-3-031-18910-4_3. [paper](https://link.springer.com/chapter/10.1007/978-3-031-18910-4_3), code modified from [this_repo](https://github.com/juntang-zhuang/LadderNet)
 
 # Visual Smoke Detection
 Xue Xia, Kun Zhan, Yajing Peng and Yuming Fang. Texture-aware network for smoke density estimation. 2022 IEEE International Conference on Visual Communications and Image Processing (VCIP), Suzhou, China, 2022, pp. 1-5, doi: 10.1109/VCIP56404.2022.10008826. [paper](https://ieeexplore.ieee.org/document/10008826), [repo](https://github.com/xia-xx-cv/TANet_smoke)
