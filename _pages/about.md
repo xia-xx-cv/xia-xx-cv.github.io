@@ -1,7 +1,10 @@
 
 2011 B.E.
+
 2014 M.E.
+
 2018 PhD.
+
 2019~Now, School of Computer Science and Artificial Intelligence, Jiangxi University and Finance and Economics
 
 Research interests include semantic segmentation, medical image analysis, and visual smoke detection.
