@@ -8,20 +8,20 @@
 
 # Basic Site Settings
 # locale                   : "en-US"
-title                    : "PhD"
+title                    : "Xia/Personal Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Xia"
 description              : &description "personal description"
-url                      : # https://xia-xx-cv.github.io
+url                      : https://xia-xx-cv.github.io
 baseurl                  : 
-repository               : 
+repository               : "xia-xx-cv/xia-xx-cv.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : # "profile.png"
+  avatar           : "logo.png"
   name             : "Xia"
   pronouns         : # example: "she/her"  
   bio              : "Workout for fitness, coffee for survival, papers for me."
@@ -36,14 +36,6 @@ author:
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=PC-Y84gAAAAJ"
   # impactstory      : # URL
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-2872-7151"
-  # semantic         : # URL
-  # pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  # researchgate     : # URL
-
-  # Repositories and software development
-  # bitbucket        : # Username - Update with your username on the site
-  # codepen          : # Username
-  # dribbble         : # Username
   github           : "xia-xx-cv"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
@@ -190,16 +182,16 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -212,10 +204,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""
@@ -230,8 +222,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -240,7 +232,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -248,8 +240,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comment: true
+      share: false
+      comment: false
   # _talks
   - scope:
       path: ""
@@ -257,7 +249,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 
 # Sass/SCSS
