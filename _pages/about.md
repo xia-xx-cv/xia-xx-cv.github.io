@@ -19,8 +19,8 @@ Master's supervisor. Research interests include lightweight semantic segmentatio
 1. Xue Xia, Jiayu You and Yuming Fang*. A graph-involved lightweight semantic segmentation network. Pattern Recognition and Computer Vision (PRCV) 2023. Lecture Notes in Computer Science, vol 14431. Springer, Singapore. doi: 10.1007/978-981-99-8540-1_30. [paper](https://link.springer.com/chapter/10.1007/978-981-99-8540-1_30), [repo](https://github.com/xia-xx-cv/Graph-Lightweight-SemSeg)
 
 ## Medical Image Analysis
-1. Xue Xia et al.. Eye disease diagnosis and fundus synthesis: a large-scale dataset and benchmark. 2022 IEEE 24th International Workshop on Multimedia Signal Processing (MMSP), Shanghai, China, 2022, pp. 1-6, doi: 10.1109/MMSP55362.2022.9949547. [conf_paper](https://ieeexplore.ieee.org/document/9949547)
-and 
+1. Xue Xia et al.. Eye disease diagnosis and fundus synthesis: a large-scale dataset and benchmark. 2022 IEEE 24th International Workshop on Multimedia Signal Processing (MMSP), Shanghai, China, 2022, pp. 1-6, doi: 10.1109/MMSP55362.2022.9949547. [conf_paper](https://ieeexplore.ieee.org/document/9949547)  
+and  
 2. Benchmarking deep models on retinal fundus disease diagnosis and a large-scale dataset. Signal Processing: Image Communication. 127: 117151, 2024. doi: 10.1016/j.image.2024.117151. [journal_paper](https://www.sciencedirect.com/science/article/pii/S0923596524000523)
 [repo_of_above_two](https://github.com/xia-xx-cv/EDDFS_dataset)
 
