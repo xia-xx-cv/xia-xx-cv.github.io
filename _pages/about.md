@@ -10,7 +10,7 @@ redirect_from:
 2011 B.E.  
 2014 M.E.  
 2018 PhD.  
-2019 ~ Present, School of Computer Science and Artificial Intelligence, Jiangxi University and Finance and Economics  
+2019 ~ Present, the School of Computing and Artificial Intelligence, Jiangxi University and Finance and Economics  
 Master's supervisor. Research interests include lightweight semantic segmentation, medical image analysis, and visual smoke detection.
 # Publications
 
